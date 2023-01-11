@@ -2,6 +2,9 @@
 def calculate_sum(a, b):
     return a + b
 
+def calculate_div(a, b):
+    return a / b
+
 
 if __name__ == '__main__':
 
