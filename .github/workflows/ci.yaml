@@ -1,0 +1,10 @@
+name: ci-python-workflow
+on: [push]
+jobs:
+  check-app:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v4
+      - run: python main_test.py
+      - run: python main.py
